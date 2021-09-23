@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>404 Not Found</title>
+  <link href="./asset/style/style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="logo">
+  <img src="./asset/img/ssl.png" alt="SS Portals">
+</div>
+  <h1 id="indevtitle"> 404 Not Found 🤔<br> <p id="indevsubtitle">Hmmm.... Doesn't seem like this page exists. Maybe try re-typing the url?</p></h1>
+  <form action="https://ssdevelopers.xyz/">
+    <input type="submit" value="Back Home" class="button" id="indevbackhome" />
+  </form>
+</body>
+</html>
