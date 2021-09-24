@@ -12,7 +12,7 @@ body {
     color: white;
 }
 
-h1 {
+.AppleSepHeroTxt h1 {
     font-size: 80px;
 }
 
@@ -87,8 +87,8 @@ nav a:hover::before {
 
 .hero {
     width: 100%;
-    height: 200px;
-    background-color: rgb(75, 75, 75);
+    height: 500px;
+    background-image: url("https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_Colors_09142021_big.jpg.slideshow-medium_2x.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +112,16 @@ nav a:hover::before {
     height: 100%;
     background-color: lightgray;
     animation: blink 0.5s infinite ease;
+}
+
+.tyeffect::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    margin-left: 5px;
+    height: 105px;
+    background-color: black;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
@@ -205,16 +215,39 @@ nav a:hover::before {
 
 /* Apple September News */
 
-.paragraph1 {
-    margin: 3%;
-    width: 100%;
+.appleSepHeroTxt {
     height: 800px;
+    color: black;
+    margin-bottom: 10px;
 }
 
-.heroImage {
-    background-image: url("win11.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.appleSepHeroImage {
+    height: 400px;
+}
+
+.section-wrapper {
+    width: 98%;
+    display: flex;
+    margin: 2%;
+    gap: 5%;
+}
+
+.section1 {
+    flex: 45%;
+    width: 100%;
+}
+
+.news h1 {
+    padding: 5%;
+    font-size: 60px;
+}
+
+img {
+    width: 100%;
+    border-radius: 11px;
+}
+
+.section2 {
+    flex: 45%;
+    width: 100%;
 }
