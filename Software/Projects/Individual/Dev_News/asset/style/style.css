@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+h1 {
+    font-size: 80px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -196,4 +200,21 @@ nav a:hover::before {
 .headline2Cont:hover {
     box-shadow: #8b8b8b 3px 3px 3px;
     transform: translateY(-5px) translateX(-5px);
+}
+
+
+/* Apple September News */
+
+.paragraph1 {
+    margin: 3%;
+    width: 100%;
+    height: 800px;
+}
+
+.heroImage {
+    background-image: url("win11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
