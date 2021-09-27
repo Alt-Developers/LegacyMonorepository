@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass  asset/sass/main.scss asset/style/style.css -w"
+    "compile:sass": "node-sass  asset/sass/main.scss asset/style/style.css"
   },
   "author": "Jirat Chutrakul",
   "license": "ISC",

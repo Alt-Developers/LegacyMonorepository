@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
+$ss-grey: #303030;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-$ss-grey: #303030;
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.7rem;
+}
 
 body {
   font-family: "JetBrains Mono", monospace;
@@ -16,7 +27,7 @@ body {
 }
 
 .AppleSepHeroTxt h1 {
-  font-size: 80px;
+  font-size: 8rem;
 }
 
 .container {
@@ -39,7 +50,7 @@ header {
 
 .logo {
   float: left;
-  width: 100px;
+  width: 10rem;
   height: auto;
   padding: 10px 0;
 }
@@ -47,6 +58,7 @@ header {
 nav {
   display: flex;
   float: right;
+  z-index: 1;
 
   ul {
     margin: 0;
@@ -56,8 +68,8 @@ nav {
 
   li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 43px;
+    margin-left: 7rem;
+    padding-top: 4.3rem;
     position: relative;
   }
 
@@ -77,7 +89,7 @@ nav {
     &::before {
       content: "";
       display: block;
-      height: 5px;
+      height: 0.5rem;
       width: 100%;
       background-color: gray;
       position: absolute;
@@ -88,13 +100,23 @@ nav {
   }
 }
 
-.hero {
+#main1 {
+  background-image: url(../img/newsbg.png);
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  // height: 80vh;
+  // width: 100%;
+
   width: 100%;
   height: 500px;
-  background-image: url("https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_Colors_09142021_big.jpg.slideshow-medium_2x.jpg");
+  // background-image: url("https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_Colors_09142021_big.jpg.slideshow-medium_2x.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#placeholdersoyoucanscroll {
+  height: 100vh;
 }
 
 .hcontainer {
@@ -105,12 +127,16 @@ nav {
 
 .typing {
   position: relative;
+  font-size: 4rem;
+  // text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+  //   2px 2px 0 #000;
+  text-shadow: 0.5rem 0.5rem 0.3rem black;
 
   &::after {
     content: "";
     position: absolute;
-    width: 1px;
-    margin-left: 5px;
+    width: 0.3rem;
+    margin-left: 0.5rem;
     height: 100%;
     background-color: lightgray;
     animation: blink 0.5s infinite ease;
@@ -120,9 +146,9 @@ nav {
 .tyeffect::after {
   content: "";
   position: absolute;
-  width: 45px;
-  margin-left: 5px;
-  height: 105px;
+  width: 4.5rem;
+  margin-left: 0.5rem;
+  height: 10.5rem;
   background-color: black;
   animation: blink 1s infinite;
 }
@@ -137,7 +163,7 @@ nav {
 }
 
 .time_hero {
-  height: 100px;
+  height: 10rem;
   background-color: #222222;
   display: flex;
   justify-content: center;
@@ -148,7 +174,7 @@ nav {
 .featured {
   width: 100%;
   display: flex;
-  padding-top: 50px;
+  padding-top: 5re;
 
   h1 {
     margin-left: 3%;
@@ -164,7 +190,7 @@ nav {
 .featuredHeadlines {
   flex: 80%;
   gap: 5%;
-  padding: 10px;
+  padding: 1rem;
   display: flex;
 
   a {
@@ -175,39 +201,39 @@ nav {
 
 .headline1Cont {
   background-color: #202020;
-  border-radius: 11px;
+  border-radius: 1.1rem;
   width: fit-content;
-  height: 510px;
-  padding: 22px;
+  height: 51rem;
+  padding: 2.2rem;
   transition: 0.5s;
 
   &:hover {
-    box-shadow: #8b8b8b 3px 3px 3px;
-    transform: translateY(-5px) translateX(-5px);
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: translateY(-0.5rem) translateX(-0.5rem);
   }
 }
 
 .headline1 img {
-  width: 460px;
-  border-radius: 15px;
+  width: 46rem;
+  border-radius: 1.5rem;
 }
 
 #headline1Txt {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .headline2Cont {
   background-color: #202020;
-  border-radius: 11px;
+  border-radius: 1.1rem;
   width: fit-content;
-  height: 500px;
-  padding: 22px;
+  height: 50rem;
+  padding: 2.2rem;
   transition: 0.5s;
 }
 
 .headline2 img {
-  width: 460px;
-  border-radius: 15px;
+  width: 46rem;
+  border-radius: 1.5rem;
 }
 
 .headline2Cont:hover {
@@ -220,7 +246,7 @@ nav {
 .appleSepHeroTxt {
   height: 800px;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .appleSepHeroImage {
@@ -241,12 +267,12 @@ nav {
 
 .news h1 {
   padding: 5%;
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 img {
   width: 100%;
-  border-radius: 11px;
+  border-radius: 1.1rem;
 }
 
 .section2 {
