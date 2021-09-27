@@ -1,0 +1,14 @@
+{
+  "name": "devnews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass  asset/sass/main.scss asset/style/style.css -w"
+  },
+  "author": "Jirat Chutrakul",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
