@@ -1,0 +1,27 @@
+.typing {
+    position: relative;
+    font-size: 4rem;
+    // text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    //   2px 2px 0 #000;
+    text-shadow: 0.5rem 0.5rem 0.3rem black;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.3rem;
+      margin-left: 0.5rem;
+      height: 100%;
+      background-color: lightgray;
+      animation: blink 0.5s infinite ease;
+    }
+  }
+  
+  .tyeffect::after {
+    content: "";
+    position: absolute;
+    width: 4.5rem;
+    margin-left: 0.5rem;
+    height: 10.5rem;
+    background-color: black;
+    animation: blink 1s infinite;
+  }

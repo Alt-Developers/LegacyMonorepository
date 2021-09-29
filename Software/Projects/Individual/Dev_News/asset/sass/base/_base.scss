@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+  
+  body {
+    font-family: "JetBrains Mono", monospace;
+    margin: 0;
+    background-color: $ss-grey;
+    color: white;
+  }

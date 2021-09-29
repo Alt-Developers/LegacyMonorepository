@@ -1,0 +1,22 @@
+.headline1 img {
+  width: 46rem;
+  border-radius: 1.5rem;
+}
+  
+#headline1Txt {
+  margin-bottom: 1rem;
+}
+
+.headline1Cont {
+  background-color: #202020;
+  border-radius: 1.1rem;
+  width: fit-content;
+  height: 51rem;
+  padding: 2.2rem;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: translateY(-0.5rem) translateX(-0.5rem);
+  }
+}

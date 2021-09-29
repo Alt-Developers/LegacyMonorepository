@@ -1,0 +1,18 @@
+.headline2Cont {
+    background-color: #202020;
+    border-radius: 1.1rem;
+    width: fit-content;
+    height: 50rem;
+    padding: 2.2rem;
+    transition: 0.5s;
+}
+  
+.headline2 img {
+    width: 46rem;
+    border-radius: 1.5rem;
+}
+
+.headline2Cont:hover {
+    box-shadow: #8b8b8b 3px 3px 3px;
+    transform: translateY(-5px) translateX(-5px);
+}
