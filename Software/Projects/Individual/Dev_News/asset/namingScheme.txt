@@ -1,0 +1,10 @@
+-Naming Practice-
+
+Start with lowercase 
+Second word till last's first letter is uppercase
+
+-Shortening Classes and Ids-
+
+Image = Img
+Paragraph = Para 
+Con = Container

@@ -4,6 +4,7 @@
     // text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     //   2px 2px 0 #000;
     text-shadow: 0.5rem 0.5rem 0.3rem black;
+    z-index: 1;
   
     &::after {
       content: "";

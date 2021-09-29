@@ -3,6 +3,7 @@ header {
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 2;
   
     &::after {
       content: "";
@@ -21,7 +22,6 @@ header {
   nav {
     display: flex;
     float: right;
-    z-index: 1;
   
     ul {
       margin: 0;

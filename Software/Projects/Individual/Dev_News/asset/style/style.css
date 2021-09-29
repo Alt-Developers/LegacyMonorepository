@@ -110,8 +110,9 @@ img {
 .typing {
   position: relative;
   font-size: 4rem;
-  text-shadow: 0.5rem 0.5rem 0.3rem black; }
-  /* line 8, asset/sass/components/_typingEffect.scss */
+  text-shadow: 0.5rem 0.5rem 0.3rem black;
+  z-index: 1; }
+  /* line 9, asset/sass/components/_typingEffect.scss */
   .typing::after {
     content: "";
     position: absolute;
@@ -121,7 +122,7 @@ img {
     background-color: lightgray;
     animation: blink 0.5s infinite ease; }
 
-/* line 19, asset/sass/components/_typingEffect.scss */
+/* line 20, asset/sass/components/_typingEffect.scss */
 .tyeffect::after {
   content: "";
   position: absolute;
@@ -141,19 +142,20 @@ img {
   height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: -1; }
 
-/* line 19, asset/sass/layout/_header.scss */
+/* line 20, asset/sass/layout/_header.scss */
 #placeholdersoyoucanscroll {
   height: 100vh; }
 
-/* line 23, asset/sass/layout/_header.scss */
-.hcontainer {
+/* line 24, asset/sass/layout/_header.scss */
+.heroCon2 {
   display: flex;
   text-align: center;
   color: white; }
 
-/* line 31, asset/sass/layout/_header.scss */
+/* line 32, asset/sass/layout/_header.scss */
 .time_hero {
   height: 10rem;
   background-color: #222222;
@@ -167,25 +169,25 @@ header {
   background-color: #303030;
   display: flex;
   position: sticky;
-  top: 0; }
-  /* line 7, asset/sass/layout/_navigation.scss */
+  top: 0;
+  z-index: 2; }
+  /* line 8, asset/sass/layout/_navigation.scss */
   header::after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 14, asset/sass/layout/_navigation.scss */
+/* line 15, asset/sass/layout/_navigation.scss */
 .logo {
   float: left;
   width: 10rem;
   height: auto;
   padding: 10px 0; }
 
-/* line 21, asset/sass/layout/_navigation.scss */
+/* line 22, asset/sass/layout/_navigation.scss */
 nav {
   display: flex;
-  float: right;
-  z-index: 1; }
+  float: right; }
   /* line 26, asset/sass/layout/_navigation.scss */
   nav ul {
     margin: 0;
