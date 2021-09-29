@@ -2,9 +2,18 @@
     height: 800px;
     color: white;
     margin-bottom: 1rem;
+    margin-left: 5rem;
+
+    p {
+      padding-top: 1rem;
+      font-size: 30px;
+    }
   }
   
 .appleSepHeroImage {
-  height: 400px;
-  margin-left: .5rem;
+  height: 55vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }

@@ -61,6 +61,10 @@ img {
   flex: 45%;
   width: 100%; }
 
+/* line 18, asset/sass/components/_appleSepPara1.scss */
+.news {
+  margin-top: 50rem; }
+
 /* line 1, asset/sass/components/_headline1.scss */
 .headline1 img {
   width: 46rem;
@@ -225,12 +229,20 @@ nav {
 .appleSepHeroTxt {
   height: 800px;
   color: white;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: 5rem; }
+  /* line 7, asset/sass/pages/_appleSep.scss */
+  .appleSepHeroTxt p {
+    padding-top: 1rem;
+    font-size: 30px; }
 
-/* line 7, asset/sass/pages/_appleSep.scss */
+/* line 13, asset/sass/pages/_appleSep.scss */
 .appleSepHeroImage {
-  height: 400px;
-  margin-left: .5rem; }
+  height: 55vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
 
 /* line 1, asset/sass/pages/_home.scss */
 .featured {
