@@ -5,9 +5,11 @@
   100% {
     opacity: 1; } }
 
-@keyframes click1 {
-  100% {
-    scale: 1, 0.7; } }
+@-webkit-keyframes MOVE-BG {
+  from {
+    background-position: 0% 0%; }
+  to {
+    background-position: 187% 0%; } }
 
 /* line 1, asset/sass/base/_base.scss */
 * {
@@ -118,16 +120,26 @@ img {
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
-  background-image: url(../../img/win11.png); }
+  background-image: linear-gradient(to right, #202020, rgba(32, 32, 32, 0.5)), url(../img/win11List.jpg);
+  background-position: center; }
+  /* line 21, asset/sass/components/_lists1.scss */
+  .list__1:hover {
+    background-position-x: -4rem;
+    transition-duration: .7s; }
+  /* line 26, asset/sass/components/_lists1.scss */
+  .list__1:active {
+    box-shadow: #8b8b8b 0 0 0;
+    transform: scale(0.9); }
 
-/* line 15, asset/sass/components/_lists1.scss */
+/* line 31, asset/sass/components/_lists1.scss */
 .list__2 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
-  border-radius: 1.1rem; }
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to right, #202020, rgba(32, 32, 32, 0.5)), url(../img/california.jpeg); }
 
-/* line 18, asset/sass/components/_lists1.scss */
+/* line 39, asset/sass/components/_lists1.scss */
 .list__3 {
   height: 10rem;
   padding: 1rem;

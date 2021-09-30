@@ -10,10 +10,31 @@
 .list {
     &__1 {
         @include listProperties;
-        background-image: url(../../img/win11.png);
+        background-image:linear-gradient(
+            to right ,
+            rgba(#202020, 1),
+            rgba(#202020, 0.5)),
+        url(../img/win11List.jpg);
+        background-position: center;
+        
+
+        &:hover {
+            background-position-x: -4rem;
+            transition-duration: .7s;
+        }
+
+        &:active {
+            box-shadow: #8b8b8b 0 0 0;
+            transform: scale(.9);
+        }
     }
     &__2 {
         @include listProperties;
+        background-image:linear-gradient(
+            to right ,
+            rgba(#202020, 1),
+            rgba(#202020, 0.5)),
+        url(../img/california.jpeg)
     }
     &__3 {
         @include listProperties;
