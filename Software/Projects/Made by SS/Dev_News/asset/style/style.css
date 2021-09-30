@@ -5,12 +5,6 @@
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes MOVE-BG {
-  from {
-    background-position: 0% 0%; }
-  to {
-    background-position: 187% 0%; } }
-
 /* line 1, asset/sass/base/_base.scss */
 * {
   box-sizing: border-box;
@@ -50,12 +44,16 @@ img {
   width: 100%;
   border-radius: 1.1rem; }
 
-/* line 15, asset/sass/base/_typography.scss */
+/* line 19, asset/sass/base/_typography.scss */
+.allHeadlines h1 {
+  padding-left: 5rem; }
+
+/* line 23, asset/sass/base/_typography.scss */
 .allHeadlines__List h2 {
   color: white;
   text-decoration: none;
   padding: 2rem 0 0 2rem; }
-  /* line 19, asset/sass/base/_typography.scss */
+  /* line 27, asset/sass/base/_typography.scss */
   .allHeadlines__List h2:hover {
     color: white;
     text-decoration: none; }
@@ -138,13 +136,22 @@ img {
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
   background-image: linear-gradient(to right, #202020, rgba(32, 32, 32, 0.5)), url(../img/california.jpeg); }
+  /* line 39, asset/sass/components/_lists1.scss */
+  .list__2:hover {
+    background-position-x: -4rem;
+    transition-duration: .7s; }
+  /* line 44, asset/sass/components/_lists1.scss */
+  .list__2:active {
+    box-shadow: #8b8b8b 0 0 0;
+    transform: scale(0.9); }
 
-/* line 39, asset/sass/components/_lists1.scss */
+/* line 49, asset/sass/components/_lists1.scss */
 .list__3 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
-  border-radius: 1.1rem; }
+  border-radius: 1.1rem;
+  background-color: #202020; }
 
 /* line 1, asset/sass/components/_typingEffect.scss */
 .typing {

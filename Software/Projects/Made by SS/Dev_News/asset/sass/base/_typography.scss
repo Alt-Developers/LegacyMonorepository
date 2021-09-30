@@ -12,13 +12,22 @@ img {
     border-radius: 1.1rem;
 }
 
-.allHeadlines__List h2 {
-    color: white;
-    text-decoration: none;
-    padding: 2rem 0 0 2rem;
-    &:hover {
+
+
+.allHeadlines {
+    
+    h1 {
+        padding-left: 5rem;
+    }
+    
+    &__List h2 {
         color: white;
-        text-decoration: none; 
-        
+        text-decoration: none;
+        padding: 2rem 0 0 2rem;
+        &:hover {
+            color: white;
+            text-decoration: none; 
+            
+        }
     }
 }

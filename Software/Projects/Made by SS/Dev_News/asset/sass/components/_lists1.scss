@@ -12,8 +12,8 @@
         @include listProperties;
         background-image:linear-gradient(
             to right ,
-            rgba(#202020, 1),
-            rgba(#202020, 0.5)),
+            rgba(#202020 , 1),
+            rgba(#202020 , 0.5)),
         url(../img/win11List.jpg);
         background-position: center;
         
@@ -32,11 +32,22 @@
         @include listProperties;
         background-image:linear-gradient(
             to right ,
-            rgba(#202020, 1),
-            rgba(#202020, 0.5)),
-        url(../img/california.jpeg)
+            rgba(#202020 , 1),
+            rgba(#202020 , 0.5)),
+        url(../img/california.jpeg);
+
+        &:hover {
+            background-position-x: -4rem;
+            transition-duration: .7s;
+        }
+
+        &:active {
+            box-shadow: #8b8b8b 0 0 0;
+            transform: scale(.9);
+        }
     }
     &__3 {
         @include listProperties;
+        background-color: #202020 ;
     }
 }
