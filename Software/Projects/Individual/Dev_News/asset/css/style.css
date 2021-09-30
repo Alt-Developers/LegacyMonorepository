@@ -259,14 +259,13 @@ nav {
   .featured p {
     margin-top: 3%;
     margin-bottom: 3%; }
-
-/* line 17, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
-.featuredHeadlines {
-  flex: 80%;
-  gap: 5%;
-  padding: 1rem;
-  display: flex; }
-  /* line 23, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
-  .featuredHeadlines a {
-    text-decoration: none;
-    color: white; }
+  /* line 16, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+  .featured__Headlines {
+    flex: 80%;
+    gap: 5%;
+    padding: 1rem;
+    display: flex; }
+    /* line 22, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+    .featured__Headlines a {
+      text-decoration: none;
+      color: white; }
