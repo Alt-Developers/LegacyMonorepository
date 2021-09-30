@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/base/_base.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+/* line 7, Projects/Individual/Dev_News/asset/sass/base/_base.scss */
+html {
+  font-size: 10px; }
+
+/* line 11, Projects/Individual/Dev_News/asset/sass/base/_base.scss */
+h2 {
+  font-size: 3rem; }
+
+/* line 14, Projects/Individual/Dev_News/asset/sass/base/_base.scss */
+p {
+  font-size: 1.7rem; }
+
+/* line 18, Projects/Individual/Dev_News/asset/sass/base/_base.scss */
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  background-color: #303030;
+  color: white; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/base/_typography.scss */
+.AppleSepHeroTxt h1 {
+  font-size: 8rem; }
+
+/* line 5, Projects/Individual/Dev_News/asset/sass/base/_typography.scss */
+.news h1 {
+  padding: 5%;
+  font-size: 6rem; }
+
+/* line 10, Projects/Individual/Dev_News/asset/sass/base/_typography.scss */
+img {
+  width: 100%;
+  border-radius: 1.1rem; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/components/_appleSepPara1.scss */
+.section-wrapper {
+  width: 98%;
+  display: flex;
+  margin: 2%;
+  gap: 5%; }
+
+/* line 8, Projects/Individual/Dev_News/asset/sass/components/_appleSepPara1.scss */
+.section1 {
+  flex: 45%;
+  width: 100%; }
+
+/* line 13, Projects/Individual/Dev_News/asset/sass/components/_appleSepPara1.scss */
+.section2 {
+  flex: 45%;
+  width: 100%; }
+
+/* line 18, Projects/Individual/Dev_News/asset/sass/components/_appleSepPara1.scss */
+.news {
+  margin-top: 50rem; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/components/_headline1.scss */
+.headline1 img {
+  width: 46rem;
+  border-radius: 1.5rem; }
+
+/* line 6, Projects/Individual/Dev_News/asset/sass/components/_headline1.scss */
+#headline1Txt {
+  margin-bottom: 1rem; }
+
+/* line 10, Projects/Individual/Dev_News/asset/sass/components/_headline1.scss */
+.headline1Cont {
+  background-color: #202020;
+  border-radius: 1.1rem;
+  width: fit-content;
+  height: 51rem;
+  padding: 2.2rem;
+  transition: 0.5s; }
+  /* line 18, Projects/Individual/Dev_News/asset/sass/components/_headline1.scss */
+  .headline1Cont:hover {
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: translateY(-0.5rem) translateX(-0.5rem); }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/components/_headline2.scss */
+.headline2Cont {
+  background-color: #202020;
+  border-radius: 1.1rem;
+  width: fit-content;
+  height: 50rem;
+  padding: 2.2rem;
+  transition: 0.5s; }
+
+/* line 10, Projects/Individual/Dev_News/asset/sass/components/_headline2.scss */
+.headline2 img {
+  width: 46rem;
+  border-radius: 1.5rem; }
+
+/* line 15, Projects/Individual/Dev_News/asset/sass/components/_headline2.scss */
+.headline2Cont:hover {
+  box-shadow: #8b8b8b 3px 3px 3px;
+  transform: translateY(-5px) translateX(-5px); }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/components/_typingEffect.scss */
+.typing {
+  position: relative;
+  font-size: 4rem;
+  text-shadow: 0.5rem 0.5rem 0.3rem black;
+  z-index: 1; }
+  /* line 9, Projects/Individual/Dev_News/asset/sass/components/_typingEffect.scss */
+  .typing::after {
+    content: "";
+    position: absolute;
+    width: 0.3rem;
+    margin-left: 0.5rem;
+    height: 100%;
+    background-color: lightgray;
+    animation: blink 0.5s infinite ease; }
+
+/* line 20, Projects/Individual/Dev_News/asset/sass/components/_typingEffect.scss */
+.tyeffect::after {
+  content: "";
+  position: absolute;
+  width: 4.5rem;
+  margin-left: 0.5rem;
+  height: 10.5rem;
+  background-color: black;
+  animation: blink 1s infinite; }
+
+/* line 3, Projects/Individual/Dev_News/asset/sass/layout/_header.scss */
+#main1 {
+  background-image: url(../img/newsbg.png);
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; }
+
+/* line 20, Projects/Individual/Dev_News/asset/sass/layout/_header.scss */
+#placeholdersoyoucanscroll {
+  height: 100vh; }
+
+/* line 24, Projects/Individual/Dev_News/asset/sass/layout/_header.scss */
+.heroCon2 {
+  display: flex;
+  text-align: center;
+  color: white; }
+
+/* line 32, Projects/Individual/Dev_News/asset/sass/layout/_header.scss */
+.time_hero {
+  height: 10rem;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+header {
+  background-color: #303030;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  /* line 8, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+  header::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 15, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+.logo {
+  float: left;
+  width: 10rem;
+  height: auto;
+  padding: 10px 0; }
+
+/* line 22, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+nav {
+  display: flex;
+  float: right; }
+  /* line 26, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 32, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+  nav li {
+    display: inline-block;
+    margin-left: 7rem;
+    padding-top: 4.3rem;
+    position: relative; }
+  /* line 39, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }
+    /* line 44, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+    nav a:hover {
+      color: red; }
+      /* line 47, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+      nav a:hover::before {
+        width: 100%; }
+    /* line 52, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+    nav a::before {
+      content: "";
+      display: block;
+      height: 0.5rem;
+      width: 100%;
+      background-color: gray;
+      position: absolute;
+      top: 0;
+      width: 0;
+      transition: 200ms; }
+
+/* line 66, Projects/Individual/Dev_News/asset/sass/layout/_navigation.scss */
+.navContainer {
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/pages/_appleSep.scss */
+.appleSepHeroTxt {
+  height: 800px;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 5rem; }
+  /* line 7, Projects/Individual/Dev_News/asset/sass/pages/_appleSep.scss */
+  .appleSepHeroTxt p {
+    padding-top: 1rem;
+    font-size: 30px; }
+
+/* line 13, Projects/Individual/Dev_News/asset/sass/pages/_appleSep.scss */
+.appleSepHeroImage {
+  height: 55vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+
+/* line 1, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+.featured {
+  width: 100%;
+  display: flex;
+  padding-top: 5re; }
+  /* line 6, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+  .featured h1 {
+    margin-left: 3%;
+    margin-right: 3%; }
+  /* line 11, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+  .featured p {
+    margin-top: 3%;
+    margin-bottom: 3%; }
+
+/* line 17, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+.featuredHeadlines {
+  flex: 80%;
+  gap: 5%;
+  padding: 1rem;
+  display: flex; }
+  /* line 23, Projects/Individual/Dev_News/asset/sass/pages/_home.scss */
+  .featuredHeadlines a {
+    text-decoration: none;
+    color: white; }

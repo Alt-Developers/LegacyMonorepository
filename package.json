@@ -1,0 +1,22 @@
+{
+  "name": "ssdevs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass Software/Projects/Individual/Dev_News/asset/sass/main.scss Software/Projects/Individual/Dev_News/asset/css/style.css -watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEN-SENSATION/SS-Developers.git"
+  },
+  "author": "Jirat Chutrakul , Prawich Thawansakdivudhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SEN-SENSATION/SS-Developers/issues"
+  },
+  "homepage": "https://github.com/SEN-SENSATION/SS-Developers#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
