@@ -1,7 +1,6 @@
 // Main Header
 
 #main1 {
-    background-image: url(../img/newsbg.png);
     background-position: top center;
     background-attachment: scroll;
     background-size: cover;
@@ -15,7 +14,13 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
+  background-image: url(../img/newsbg.png);
+
   }
+
+.blur {
+  backdrop-filter: blur(1rem);
+}
 
 #placeholdersoyoucanscroll {
     height: 100vh;
@@ -37,3 +42,4 @@
     align-items: center;
     font-size: large;
   }
+

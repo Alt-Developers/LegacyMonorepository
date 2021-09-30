@@ -12,11 +12,10 @@ img {
     border-radius: 1.1rem;
 }
 
-
-
 .allHeadlines {
-    
+
     h1 {
+        font-size: 5rem;
         padding-left: 5rem;
     }
     
@@ -27,7 +26,6 @@ img {
         &:hover {
             color: white;
             text-decoration: none; 
-            
         }
     }
 }

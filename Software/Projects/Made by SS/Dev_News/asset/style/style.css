@@ -13,17 +13,18 @@
 
 /* line 7, asset/sass/base/_base.scss */
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
-/* line 11, asset/sass/base/_base.scss */
+/* line 12, asset/sass/base/_base.scss */
 h2 {
   font-size: 3rem; }
 
-/* line 14, asset/sass/base/_base.scss */
+/* line 15, asset/sass/base/_base.scss */
 p {
   font-size: 1.7rem; }
 
-/* line 18, asset/sass/base/_base.scss */
+/* line 19, asset/sass/base/_base.scss */
 body {
   font-family: "JetBrains Mono", monospace;
   margin: 0;
@@ -44,16 +45,17 @@ img {
   width: 100%;
   border-radius: 1.1rem; }
 
-/* line 19, asset/sass/base/_typography.scss */
+/* line 17, asset/sass/base/_typography.scss */
 .allHeadlines h1 {
+  font-size: 5rem;
   padding-left: 5rem; }
 
-/* line 23, asset/sass/base/_typography.scss */
+/* line 22, asset/sass/base/_typography.scss */
 .allHeadlines__List h2 {
   color: white;
   text-decoration: none;
   padding: 2rem 0 0 2rem; }
-  /* line 27, asset/sass/base/_typography.scss */
+  /* line 26, asset/sass/base/_typography.scss */
   .allHeadlines__List h2:hover {
     color: white;
     text-decoration: none; }
@@ -110,48 +112,69 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px; }
+  padding: 1rem;
+  background-color: #202020;
+  margin-top: 5rem; }
 
 /* line 11, asset/sass/components/_lists1.scss */
+.allHeadlines a {
+  text-decoration: none; }
+
+/* line 17, asset/sass/components/_lists1.scss */
 .list__1 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
-  background-image: linear-gradient(to right, #202020, rgba(32, 32, 32, 0.5)), url(../img/win11List.jpg);
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/win11List.jpg);
   background-position: center; }
-  /* line 21, asset/sass/components/_lists1.scss */
-  .list__1:hover {
-    background-position-x: -4rem;
-    transition-duration: .7s; }
   /* line 26, asset/sass/components/_lists1.scss */
+  .list__1::before {
+    background-position-x: 2rem; }
+  /* line 30, asset/sass/components/_lists1.scss */
+  .list__1:hover {
+    background-position-x: -2rem;
+    transition-duration: .7s; }
+  /* line 35, asset/sass/components/_lists1.scss */
   .list__1:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
 
-/* line 31, asset/sass/components/_lists1.scss */
+/* line 40, asset/sass/components/_lists1.scss */
 .list__2 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
-  background-image: linear-gradient(to right, #202020, rgba(32, 32, 32, 0.5)), url(../img/california.jpeg); }
-  /* line 39, asset/sass/components/_lists1.scss */
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/california.jpeg); }
+  /* line 48, asset/sass/components/_lists1.scss */
   .list__2:hover {
-    background-position-x: -4rem;
+    background-position-x: -2rem;
     transition-duration: .7s; }
-  /* line 44, asset/sass/components/_lists1.scss */
+  /* line 53, asset/sass/components/_lists1.scss */
   .list__2:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
 
-/* line 49, asset/sass/components/_lists1.scss */
+/* line 58, asset/sass/components/_lists1.scss */
 .list__3 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
-  background-color: #202020; }
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/ambient.jpg);
+  background-position: center; }
+  /* line 67, asset/sass/components/_lists1.scss */
+  .list__3:hover {
+    background-position-x: -2rem;
+    transition-duration: .7s; }
+  /* line 72, asset/sass/components/_lists1.scss */
+  .list__3:active {
+    box-shadow: #8b8b8b 0 0 0;
+    transform: scale(0.9); }
 
 /* line 1, asset/sass/components/_typingEffect.scss */
 .typing {
@@ -181,7 +204,6 @@ img {
 
 /* line 3, asset/sass/layout/_header.scss */
 #main1 {
-  background-image: url(../img/newsbg.png);
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
@@ -190,19 +212,24 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1; }
+  z-index: -1;
+  background-image: url(../img/newsbg.png); }
 
-/* line 20, asset/sass/layout/_header.scss */
+/* line 21, asset/sass/layout/_header.scss */
+.blur {
+  backdrop-filter: blur(1rem); }
+
+/* line 25, asset/sass/layout/_header.scss */
 #placeholdersoyoucanscroll {
   height: 100vh; }
 
-/* line 24, asset/sass/layout/_header.scss */
+/* line 29, asset/sass/layout/_header.scss */
 .heroCon2 {
   display: flex;
   text-align: center;
   color: white; }
 
-/* line 32, asset/sass/layout/_header.scss */
+/* line 37, asset/sass/layout/_header.scss */
 .time_hero {
   height: 10rem;
   background-color: #222222;
@@ -301,18 +328,19 @@ nav {
   /* line 6, asset/sass/pages/_home.scss */
   .featured h1 {
     margin-left: 3%;
-    margin-right: 3%; }
-  /* line 11, asset/sass/pages/_home.scss */
+    margin-right: 3%;
+    font-size: 5rem; }
+  /* line 12, asset/sass/pages/_home.scss */
   .featured p {
     margin-top: 3%;
     margin-bottom: 3%; }
-  /* line 16, asset/sass/pages/_home.scss */
+  /* line 17, asset/sass/pages/_home.scss */
   .featured__Headlines {
     flex: 80%;
     gap: 5%;
     padding: 1rem;
     display: flex; }
-    /* line 22, asset/sass/pages/_home.scss */
+    /* line 23, asset/sass/pages/_home.scss */
     .featured__Headlines a {
       text-decoration: none;
       color: white; }
