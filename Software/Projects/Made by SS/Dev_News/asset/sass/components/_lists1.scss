@@ -1,0 +1,21 @@
+.allHeadlines {
+    &__List {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+.list {
+    &__1 {
+        @include listProperties;
+        background-image: url(../../img/win11.png);
+    }
+    &__2 {
+        @include listProperties;
+    }
+    &__3 {
+        @include listProperties;
+    }
+}

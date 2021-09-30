@@ -5,6 +5,10 @@
   100% {
     opacity: 1; } }
 
+@keyframes click1 {
+  100% {
+    scale: 1, 0.7; } }
+
 /* line 1, asset/sass/base/_base.scss */
 * {
   box-sizing: border-box;
@@ -44,6 +48,16 @@ img {
   width: 100%;
   border-radius: 1.1rem; }
 
+/* line 15, asset/sass/base/_typography.scss */
+.allHeadlines__List h2 {
+  color: white;
+  text-decoration: none;
+  padding: 2rem 0 0 2rem; }
+  /* line 19, asset/sass/base/_typography.scss */
+  .allHeadlines__List h2:hover {
+    color: white;
+    text-decoration: none; }
+
 /* line 1, asset/sass/components/_appleSepPara1.scss */
 .section-wrapper {
   width: 98%;
@@ -65,46 +79,60 @@ img {
 .news {
   margin-top: 50rem; }
 
-/* line 1, asset/sass/components/_headline1.scss */
-.headline1 img {
+/* line 4, asset/sass/components/_headline1.scss */
+.headline__1 img {
   width: 46rem;
   border-radius: 1.5rem; }
 
-/* line 6, asset/sass/components/_headline1.scss */
-#headline1Txt {
-  margin-bottom: 1rem; }
-
-/* line 10, asset/sass/components/_headline1.scss */
-.headline1Cont {
+/* line 9, asset/sass/components/_headline1.scss */
+.headline__1-Cont {
   background-color: #202020;
   border-radius: 1.1rem;
   width: fit-content;
   height: 51rem;
   padding: 2.2rem;
   transition: 0.5s; }
-  /* line 18, asset/sass/components/_headline1.scss */
-  .headline1Cont:hover {
+  /* line 17, asset/sass/components/_headline1.scss */
+  .headline__1-Cont:hover {
     box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
-    transform: translateY(-0.5rem) translateX(-0.5rem); }
+    transform: scale(1.05); }
+  /* line 22, asset/sass/components/_headline1.scss */
+  .headline__1-Cont:active {
+    box-shadow: #8b8b8b 0 0 0;
+    transform: scale(0.9); }
 
-/* line 1, asset/sass/components/_headline2.scss */
-.headline2Cont {
-  background-color: #202020;
+/* line 30, asset/sass/components/_headline1.scss */
+#headline1Txt {
+  margin-bottom: 1rem; }
+
+/* line 2, asset/sass/components/_lists1.scss */
+.allHeadlines__List {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px; }
+
+/* line 11, asset/sass/components/_lists1.scss */
+.list__1 {
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
-  width: fit-content;
-  height: 50rem;
-  padding: 2.2rem;
-  transition: 0.5s; }
+  background-image: url(../../img/win11.png); }
 
-/* line 10, asset/sass/components/_headline2.scss */
-.headline2 img {
-  width: 46rem;
-  border-radius: 1.5rem; }
+/* line 15, asset/sass/components/_lists1.scss */
+.list__2 {
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem 5rem 1rem 20rem;
+  border-radius: 1.1rem; }
 
-/* line 15, asset/sass/components/_headline2.scss */
-.headline2Cont:hover {
-  box-shadow: #8b8b8b 3px 3px 3px;
-  transform: translateY(-5px) translateX(-5px); }
+/* line 18, asset/sass/components/_lists1.scss */
+.list__3 {
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem 5rem 1rem 20rem;
+  border-radius: 1.1rem; }
 
 /* line 1, asset/sass/components/_typingEffect.scss */
 .typing {
@@ -250,7 +278,7 @@ nav {
 .featured {
   width: 100%;
   display: flex;
-  padding-top: 5re; }
+  padding-top: 5rem; }
   /* line 6, asset/sass/pages/_home.scss */
   .featured h1 {
     margin-left: 3%;
@@ -259,14 +287,13 @@ nav {
   .featured p {
     margin-top: 3%;
     margin-bottom: 3%; }
-
-/* line 17, asset/sass/pages/_home.scss */
-.featuredHeadlines {
-  flex: 80%;
-  gap: 5%;
-  padding: 1rem;
-  display: flex; }
-  /* line 23, asset/sass/pages/_home.scss */
-  .featuredHeadlines a {
-    text-decoration: none;
-    color: white; }
+  /* line 16, asset/sass/pages/_home.scss */
+  .featured__Headlines {
+    flex: 80%;
+    gap: 5%;
+    padding: 1rem;
+    display: flex; }
+    /* line 22, asset/sass/pages/_home.scss */
+    .featured__Headlines a {
+      text-decoration: none;
+      color: white; }
