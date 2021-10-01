@@ -39,7 +39,7 @@ setInterval(() => {
   var date = new Date();
   console.log(date);
 
-  document.getElementById("date").innerHTML = `${date} (Last updated 24 Sep)`;
+  document.getElementById("date").innerHTML = `${date}`;
 }, 1000);
 
 // Header (Top-Hero) Effect
@@ -52,13 +52,15 @@ document.getElementById("body").onscroll = function myFunction() {
   let yvalue = scrolltotop * factor;
 
   // Calculate
-  console.log(scrolltotop / 1000);
+  console.log("Before Calculation: " + scrolltotop / 1000);
   scrolltotop / 1000 <= 1.3
     ? (blurValue = scrolltotop / 1000)
     : (blurValue = 1.3);
-  console.log("Blur :" + blurValue);
+  console.log("Blur: " + blurValue);
   // Display
+  // BackGround & ForeGround
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  const hello = `blur(${blurValue}rem)`;
-  hero.style.filter = hello;
+  // Blur by scroll
+  const blurNow = `blur(${blurValue}rem)`;
+  hero.style.filter = blurNow;
 };
