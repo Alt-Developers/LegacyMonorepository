@@ -68,8 +68,17 @@ img {
     color: white;
     text-decoration: none; }
 
-/* line 33, asset/sass/base/_typography.scss */
-.deleatAnchorEffect {
+/* line 32, asset/sass/base/_typography.scss */
+.allHeadlines__List-wrapper {
+  background-color: #202020;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  margin: 0 7rem; }
+
+/* line 43, asset/sass/base/_typography.scss */
+.removeAnchorEffect {
   text-decoration: none;
   color: #fff; }
 
@@ -126,64 +135,76 @@ img {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  background-color: #202020;
-  margin-top: 5rem; }
+  margin-top: 3rem; }
 
-/* line 11, asset/sass/components/_lists1.scss */
+/* line 10, asset/sass/components/_lists1.scss */
 .allHeadlines a {
   text-decoration: none; }
 
 /* line 17, asset/sass/components/_lists1.scss */
+.list__date {
+  text-align: right;
+  padding: 0 0 4%;
+  opacity: 0;
+  transition-duration: 1s; }
+  /* line 23, asset/sass/components/_lists1.scss */
+  .list__date:hover {
+    opacity: 100%; }
+
+/* line 28, asset/sass/components/_lists1.scss */
 .list__1 {
   height: 10rem;
   padding: 1rem;
-  margin: 1rem 5rem 1rem 20rem;
+  margin: 1rem 3rem 1rem 3rem;
   border-radius: 1.1rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/win11List.jpg);
   transition-duration: .5s; }
-  /* line 26, asset/sass/components/_lists1.scss */
+  /* line 37, asset/sass/components/_lists1.scss */
   .list__1:hover {
     box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
     transform: scale(1.02); }
-  /* line 30, asset/sass/components/_lists1.scss */
+  /* line 42, asset/sass/components/_lists1.scss */
   .list__1:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
+  /* line 47, asset/sass/components/_lists1.scss */
+  .list__1 p {
+    text-align: right; }
 
-/* line 35, asset/sass/components/_lists1.scss */
+/* line 51, asset/sass/components/_lists1.scss */
 .list__2 {
   height: 10rem;
   padding: 1rem;
-  margin: 1rem 5rem 1rem 20rem;
+  margin: 1rem 3rem 1rem 3rem;
   border-radius: 1.1rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/california.jpeg);
   transition-duration: .5s; }
-  /* line 44, asset/sass/components/_lists1.scss */
+  /* line 60, asset/sass/components/_lists1.scss */
   .list__2:hover {
     box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
     transform: scale(1.02); }
-  /* line 48, asset/sass/components/_lists1.scss */
+  /* line 64, asset/sass/components/_lists1.scss */
   .list__2:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
 
-/* line 53, asset/sass/components/_lists1.scss */
+/* line 69, asset/sass/components/_lists1.scss */
 .list__3 {
   height: 10rem;
   padding: 1rem;
-  margin: 1rem 5rem 1rem 20rem;
+  margin: 1rem 3rem 1rem 3rem;
   border-radius: 1.1rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/ambient.jpg);
   background-position: center;
   transition-duration: .5s; }
-  /* line 63, asset/sass/components/_lists1.scss */
+  /* line 79, asset/sass/components/_lists1.scss */
   .list__3:hover {
     box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
     transform: scale(1.02); }
-  /* line 67, asset/sass/components/_lists1.scss */
+  /* line 83, asset/sass/components/_lists1.scss */
   .list__3:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }

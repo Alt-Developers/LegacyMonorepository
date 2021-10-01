@@ -4,8 +4,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-        background-color: #202020;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     & a {
@@ -14,6 +13,18 @@
 }
 
 .list {
+
+    &__date {
+        text-align: right;
+        padding: 0 0 4%;
+        opacity: 0;
+        transition-duration: 1s;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+
     &__1 {
         @include listProperties;
         background-image:linear-gradient(
@@ -27,9 +38,14 @@
             @include listHover;
           }
 
+          
         &:active {
             box-shadow: #8b8b8b 0 0 0;
             transform: scale(.9);
+        }
+
+        p {
+            text-align: right;
         }
     }
     &__2 {

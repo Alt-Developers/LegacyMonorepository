@@ -28,9 +28,19 @@ img {
             text-decoration: none; 
         }
     }
+
+    &__List-wrapper {
+        background-color: #202020;
+        border-radius: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display:block;
+        margin: 0 7rem;
+    }
 }
 
-.deleatAnchorEffect {
+
+.removeAnchorEffect {
     text-decoration: none;
     color: #fff;
 }
