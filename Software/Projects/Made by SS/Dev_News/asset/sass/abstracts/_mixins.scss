@@ -5,3 +5,8 @@
     border-radius: 1.1rem;
     text-decoration: none;
 }
+
+@mixin listHover {
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: scale(1.02);
+}

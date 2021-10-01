@@ -6,3 +6,15 @@
       opacity: 1;
     }
   }
+
+@keyframes in{
+    100% {
+      background-position-x: -2rem;
+    }
+}
+
+@keyframes out{
+    100% {
+      background-position-x: 2rem;
+    }
+}
