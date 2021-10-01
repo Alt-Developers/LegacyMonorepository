@@ -5,6 +5,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes in {
+  100% {
+    background-position-x: -2rem; } }
+
+@keyframes out {
+  100% {
+    background-position-x: 2rem; } }
+
 /* line 1, asset/sass/base/_base.scss */
 * {
   box-sizing: border-box;
@@ -59,6 +67,11 @@ img {
   .allHeadlines__List h2:hover {
     color: white;
     text-decoration: none; }
+
+/* line 33, asset/sass/base/_typography.scss */
+.deleatAnchorEffect {
+  text-decoration: none;
+  color: #fff; }
 
 /* line 1, asset/sass/components/_appleSepPara1.scss */
 .section-wrapper {
@@ -128,37 +141,35 @@ img {
   border-radius: 1.1rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/win11List.jpg);
-  background-position: center; }
+  transition-duration: .5s; }
   /* line 26, asset/sass/components/_lists1.scss */
-  .list__1::before {
-    background-position-x: 2rem; }
-  /* line 30, asset/sass/components/_lists1.scss */
   .list__1:hover {
-    background-position-x: -2rem;
-    transition-duration: .7s; }
-  /* line 35, asset/sass/components/_lists1.scss */
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: scale(1.02); }
+  /* line 30, asset/sass/components/_lists1.scss */
   .list__1:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
 
-/* line 40, asset/sass/components/_lists1.scss */
+/* line 35, asset/sass/components/_lists1.scss */
 .list__2 {
   height: 10rem;
   padding: 1rem;
   margin: 1rem 5rem 1rem 20rem;
   border-radius: 1.1rem;
   text-decoration: none;
-  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/california.jpeg); }
-  /* line 48, asset/sass/components/_lists1.scss */
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/california.jpeg);
+  transition-duration: .5s; }
+  /* line 44, asset/sass/components/_lists1.scss */
   .list__2:hover {
-    background-position-x: -2rem;
-    transition-duration: .7s; }
-  /* line 53, asset/sass/components/_lists1.scss */
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: scale(1.02); }
+  /* line 48, asset/sass/components/_lists1.scss */
   .list__2:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
 
-/* line 58, asset/sass/components/_lists1.scss */
+/* line 53, asset/sass/components/_lists1.scss */
 .list__3 {
   height: 10rem;
   padding: 1rem;
@@ -166,12 +177,13 @@ img {
   border-radius: 1.1rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.5)), url(../img/ambient.jpg);
-  background-position: center; }
-  /* line 67, asset/sass/components/_lists1.scss */
+  background-position: center;
+  transition-duration: .5s; }
+  /* line 63, asset/sass/components/_lists1.scss */
   .list__3:hover {
-    background-position-x: -2rem;
-    transition-duration: .7s; }
-  /* line 72, asset/sass/components/_lists1.scss */
+    box-shadow: #8b8b8b 0.3rem 0.3rem 0.3rem;
+    transform: scale(1.02); }
+  /* line 67, asset/sass/components/_lists1.scss */
   .list__3:active {
     box-shadow: #8b8b8b 0 0 0;
     transform: scale(0.9); }
@@ -300,6 +312,16 @@ nav {
 .navContainer {
   width: 80%;
   margin: 0 auto; }
+
+/* line 1, asset/sass/layout/_footer.scss */
+footer {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  background-color: #202020; }
+  /* line 6, asset/sass/layout/_footer.scss */
+  footer p {
+    text-decoration: none; }
 
 /* line 1, asset/sass/pages/_appleSep.scss */
 .appleSepHeroTxt {

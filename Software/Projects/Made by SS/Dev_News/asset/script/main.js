@@ -44,7 +44,7 @@ document.getElementById("body").onscroll = function myFunction() {
   let factor = 0.5;
   let yvalue = scrolltotop * factor;
   console.log(scrolltotop / 1000)
-  scrolltotop / 1000 <= 3 ? blurValue = scrolltotop / 1000 : blurValue = 3;
+  scrolltotop / 1000 <= 1.3 ? blurValue = scrolltotop / 1000 : blurValue = 1.3;
   console.log("Blur :" + blurValue)
   // console.log("Hello")
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
