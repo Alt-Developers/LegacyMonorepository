@@ -1,9 +1,11 @@
-"use strict";
+"use strict"; // Use Strict Mode
 
+// Looping Text
 const text = [
-  "Tech news for everyone. ",
-  "Collaborative People",
-  "Fresh news from Bangkok",
+  "Tech news from SS. ",
+  "Collaborative People ",
+  "Fresh news from Bangkok ",
+  "@The Heart of Thailand ",
 ];
 
 // Var
