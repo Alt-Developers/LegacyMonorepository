@@ -1,15 +1,23 @@
-"use strict";
+"use strict"; // Use Strict Mode
 
+// Looping Text
 const text = [
-  "Tech news for everyone. ",
-  "Collaborative People",
-  "Fresh news from Bangkok",
+  "Tech news from SS. ",
+  "Collaborative People ",
+  "Fresh news from Bangkok ",
+  "@The Heart of Thailand ",
 ];
+
+// Var
 let count = 0;
 let index = 0;
 let currentText = "";
 let letter = "";
 let now;
+let blurValue = 0;
+
+// DOM Annouce
+const hero = document.querySelector(".hero");
 
 (function type() {
   if (count === text.length) {
@@ -31,24 +39,28 @@ setInterval(() => {
   var date = new Date();
   console.log(date);
 
-  document.getElementById("date").innerHTML = `${date} (Last updated 24 Sep)`;
+  document.getElementById("date").innerHTML = `${date}`;
 }, 1000);
 
-const hero = document.querySelector(".hero");
-let blurValue = 0;
-
+// Header (Top-Hero) Effect
 document.getElementById("body").onscroll = function myFunction() {
+  // Variables
   let scrolltotop = document.scrollingElement.scrollTop;
   let target = document.querySelector(".hero");
   let xvalue = "center";
   let factor = 0.5;
   let yvalue = scrolltotop * factor;
-  console.log(scrolltotop / 1000)
-  scrolltotop / 1000 <= 1.3 ? blurValue = scrolltotop / 1000 : blurValue = 1.3;
-  console.log("Blur :" + blurValue)
-  // console.log("Hello")
-  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  const hello = `blur(${blurValue}rem)`;
-  hero.style.filter = hello;
 
+  // Calculate
+  console.log("Before Calculation: " + scrolltotop / 1000);
+  scrolltotop / 1000 <= 1.3
+    ? (blurValue = scrolltotop / 1000)
+    : (blurValue = 1.3);
+  console.log("Blur: " + blurValue);
+  // Display
+  // BackGround & ForeGround
+  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+  // Blur by scroll
+  const blurNow = `blur(${blurValue}rem)`;
+  hero.style.filter = blurNow;
 };
