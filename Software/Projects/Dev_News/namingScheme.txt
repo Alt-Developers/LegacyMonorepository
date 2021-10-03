@@ -1,10 +1,10 @@
 -Naming Practice-
 
-Start with lowercase 
-Second word till last's first letter is uppercase (camelCase Mehtod)
+Start with lowercase (camelCase)
+Second word till last's first letter is uppercase (camelCase Method)
 
 -Shortening Classes and Ids-
 
 Image = Img
-Paragraph = Para 
-Con = Container
+Paragraph = Para
+Container = Con
