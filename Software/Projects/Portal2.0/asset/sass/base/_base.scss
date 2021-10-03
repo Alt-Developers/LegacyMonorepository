@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%; // 62.5% of default font is 10 pixel
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  background-color: $ss-gray;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.removeAnchorEffect {
+  text-decoration: none;
+  color: $ss-white;
+  & a {
+    text-decoration: none;
+  }
+}

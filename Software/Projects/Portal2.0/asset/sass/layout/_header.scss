@@ -1,0 +1,13 @@
+.hero {
+  height: 60vh;
+  width: 100vw;
+  background-color: $ss-darkest-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 3px black;
+  }
+}

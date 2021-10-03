@@ -1,0 +1,14 @@
+{
+  "name": "portal2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass asset/sass/main.scss asset/style/style.css -watch"
+  },
+  "author": "SS Developers",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

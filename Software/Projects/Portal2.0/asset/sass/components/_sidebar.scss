@@ -1,0 +1,32 @@
+.widget {
+  width: 40rem;
+  height: fit-content;
+  background-color: $ss-gray-brighter;
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  &__Projects {
+    display: flex;
+    flex-direction: column;
+
+    &--1 {
+      @include sidebarList;
+      background-image: linear-gradient(
+          to right,
+          rgba(#202020, 0.8),
+          rgba(#202020, 0.5)
+        ),
+        url(../img/Valorant.jpeg);
+    }
+
+    &--2 {
+      @include sidebarList;
+    }
+
+    &--3 {
+      @include sidebarList;
+    }
+  }
+}

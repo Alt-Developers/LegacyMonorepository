@@ -1,0 +1,53 @@
+nav {
+  float: right;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 43px;
+    position: relative;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: red;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 100%;
+      background-color: gray;
+      position: absolute;
+      top: 0;
+      width: 0;
+      transition: 200ms;
+    }
+  }
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.navigationContainer {
+  height: 15vh;
+  width: 100%;
+  background-color: $ss-gray-darker;
+}
