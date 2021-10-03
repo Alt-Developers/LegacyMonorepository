@@ -1,7 +1,7 @@
 -Naming Practice-
 
 Start with lowercase 
-Second word till last's first letter is uppercase
+Second word till last's first letter is uppercase (camelCase Mehtod)
 
 -Shortening Classes and Ids-
 
