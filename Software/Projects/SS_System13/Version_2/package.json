@@ -1,0 +1,14 @@
+{
+  "name": "version_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "a": "node-sass asset/sass/main.scss asset/style/style.css -watch"
+  },
+  "author": "SS developers",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

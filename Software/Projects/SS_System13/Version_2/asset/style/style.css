@@ -1,0 +1,7 @@
+/* line 1, asset/sass/base/_base.scss */
+body {
+  background-color: #f7f7f7; }
+
+/* line 1, asset/sass/layout/_header.scss */
+nav {
+  display: flex; }
