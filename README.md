@@ -7,10 +7,18 @@ We are a group of middle school students that are practicing our coding skills
 by doing the projects that we think are useful for everyone like
 solving the valorant unfair team problem , ect.
 
+## Our Creations ⚒️
+
+
 ## Our Developers 🧑‍💻
 Currently there are two developers on the team
 
-**Prawich Thawansakdivudhi (SEN-SENSATION)** | [To Profile](https://github.com/SEN-SENSATION)
+### Main developers </br>
+**Prawich Thawansakdivudhi (SEN-SENSATION)** | [To Profile](https://github.com/SEN-SENSATION) </br>
 **Jirat Chutrakul (Saikaaa)** | [To Profile](https://github.com/Jiraties)
+
+### Supporting / Coding Advice
+**Phawat (Galax028)** | [To Profile](https://github.com/Galax028)
+
 
 ![BUILT](http://forthebadge.com/images/badges/built-by-developers.svg)
