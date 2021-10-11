@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "../../../../../.."
+    },
+    {
+      "path": "../../../../../../../../Code/Js_MasterClass/JsMaster"
+    },
+    {
+      "path": "../../../../../../../../Code/Personnal"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 8080
+  }
+}

@@ -50,7 +50,7 @@ document.getElementById("body").onscroll = function myFunction() {
   let xvalue = "center";
   let factor = 0.5;
   let yvalue = scrolltotop * factor;
-
+  //  < <= >= > !== != => = == ===
   // Calculate
   console.log("Before Calculation: " + scrolltotop / 1000);
   scrolltotop / 1000 <= 1.3
