@@ -18,6 +18,6 @@ Currently there are two developers on the team
 **Jirat Chutrakul (Saikaaa)** | [To Profile](https://github.com/Jiraties)
 
 ### Supporting / Coding Advice
-*1Person | Can't disclose*
+*Can't disclose*
 
 ![BUILT](http://forthebadge.com/images/badges/built-by-developers.svg)
