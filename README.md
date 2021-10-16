@@ -17,5 +17,4 @@ Currently there are two developers on the team
 **Prawich Thawansakdivudhi (SEN-SENSATION)** | [To Profile](https://github.com/SEN-SENSATION) </br>
 **Jirat Chutrakul (Saikaaa)** | [To Profile](https://github.com/Jiraties)
 
-
 ![BUILT](http://forthebadge.com/images/badges/built-by-developers.svg)
