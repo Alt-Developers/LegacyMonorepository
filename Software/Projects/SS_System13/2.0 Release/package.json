@@ -1,0 +1,15 @@
+{
+  "name": "2.0-release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "a" : "node-sass asset/sass/main.scss asset/style/style.css -w"
+  },
+  "author": "Jirat Chutrakul",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

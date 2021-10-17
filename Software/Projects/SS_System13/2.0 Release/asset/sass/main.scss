@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+
+// @import "components/appleSepPara1";
+// @import "components/headline1";
+// @import "components/lists1";
+// @import "components/typingEffect";
+@import "components/overview";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "pages/appleSep";
+@import "pages/home";

@@ -1,0 +1,13 @@
+.section-overview {
+    &__grid {
+        margin-left: 3rem;
+        height: 90vh;
+        width: 80%;
+        grid-gap: 2rem;
+        border-radius: 1.2rem;
+
+        z-index: 1000;
+
+        background-color: #fff;
+    }
+}
