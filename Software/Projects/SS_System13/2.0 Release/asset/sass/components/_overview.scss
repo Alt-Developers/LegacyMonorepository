@@ -1,13 +1,96 @@
+// .section-overview {
+//   position: relative;
+//   &__text {
+//     position: absolute;
+//     top: 0;
+//     right: 25%;
+
+//     font-size: 4rem;
+//   }
+
+//   img {
+//     display: inline-block;
+//     margin: 1rem 1rem 1rem 3rem;
+//     border-radius: 1.2rem;
+//     width: 55%;
+//     height: auto;
+
+//     background-size: cover;
+//   }
+// }
+
+// .section-overview {
+//   &__text {
+//     h3 {
+//       font-size: 4rem;
+//       margin-left: 2rem;
+//       color: $paragrph-text-1;
+//     }
+
+//     p {
+//       font-size: 1.3rem;
+//     }
+//   }
+//   &__headline {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-content: flex-start;
+
+//     img {
+//       display: inline-block;
+//       margin: 1rem 1rem 1rem 3rem;
+//       border-radius: 1.2rem;
+//       width: 55%;
+//       height: auto;
+
+//       background-size: cover;
+//     }
+//   }
+// }
+
 .section-overview {
-    &__grid {
-        margin-left: 3rem;
-        height: 90vh;
-        width: 80%;
-        grid-gap: 2rem;
-        border-radius: 1.2rem;
+  &__grid {
+    display: grid;
+    height: 80vh;
+    padding: 2rem;
 
-        z-index: 1000;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
 
-        background-color: #fff;
+    grid-template-areas:
+      "bigone bigone one"
+      "two bigtwo bigtwo";
+  }
+  img {
+    width: 100%;
+    border-radius: 1.1rem;
+  }
+
+  &__big1 {
+    grid-area: bigone;
+    border-radius: 1.2rem;
+  }
+
+  &__1 {
+    grid-area: one;
+    border-radius: 1.1rem;
+    h3 {
+      font-size: 4rem;
     }
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  &__2 {
+    grid-area: two;
+
+    border-radius: 1.2rem;
+  }
+
+  &__big2 {
+    grid-area: bigtwo;
+    border-radius: 1.2rem;
+  }
 }

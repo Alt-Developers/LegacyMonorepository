@@ -4,7 +4,7 @@
   top: 0;
   height: 100%;
   width: 78px;
-  background: #11101D;
+  background: $search-red-1;
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -26,7 +26,7 @@
     }
 
     .logo_name {
-      color: #fff;
+      color: $blinding-white;
       font-size: 20px;
       font-weight: 600;
       opacity: 0;
@@ -36,7 +36,8 @@
   }
 
   &.open .logo-details {
-    .icon, .logo_name {
+    .icon,
+    .logo_name {
       opacity: 1;
     }
   }
@@ -59,7 +60,7 @@
   }
 
   i {
-    color: #fff;
+    color: $blinding-white;
     height: 60px;
     min-width: 50px;
     font-size: 28px;
@@ -82,7 +83,7 @@
       top: -20px;
       left: calc(100% + 15px);
       z-index: 3;
-      background: #fff;
+      background: $blinding-white;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
       padding: 6px 12px;
       border-radius: 4px;
@@ -109,7 +110,7 @@
 
   input {
     font-size: 15px;
-    color: #FFF;
+    color: $blinding-white;
     font-weight: 400;
     outline: none;
     height: 50px;
@@ -118,7 +119,7 @@
     border: none;
     border-radius: 12px;
     transition: all 0.5s ease;
-    background: #1d1b31;
+    background: $nav-background-red-1;
   }
 
   &.open input {
@@ -132,17 +133,17 @@
     left: 0;
     transform: translateY(-50%);
     font-size: 22px;
-    background: #1d1b31;
-    color: #FFF;
+    background: $nav-background-red-1;
+    color: $blinding-white;
   }
 
   &.open .bx-search:hover {
-    background: #1d1b31;
-    color: #FFF;
+    background: $nav-background-red-1;
+    color: $blinding-white;
   }
 
   .bx-search:hover {
-    background: #FFF;
+    background: $blinding-white;
     color: #11101d;
   }
 
@@ -154,14 +155,14 @@
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background: #11101D;
+    background: $btn-red-1;
 
     &:hover {
-      background: #FFF;
+      background: $blinding-white;
     }
 
     .links_name {
-      color: #fff;
+      color: $blinding-white;
       font-size: 15px;
       font-weight: 400;
       white-space: nowrap;
@@ -178,9 +179,10 @@
 
   li {
     a:hover {
-      .links_name, i {
+      .links_name,
+      i {
         transition: all 0.5s ease;
-        color: #11101D;
+        color: #11101d;
       }
     }
 
@@ -198,7 +200,7 @@
       left: 0;
       bottom: -8px;
       padding: 10px 14px;
-      background: #1d1b31;
+      background: orangered;
       transition: all 0.5s ease;
       overflow: hidden;
     }
@@ -227,14 +229,14 @@
       .name {
         font-size: 15px;
         font-weight: 400;
-        color: #fff;
+        color: $blinding-white;
         white-space: nowrap;
       }
 
       .job {
         font-size: 15px;
         font-weight: 400;
-        color: #fff;
+        color: $blinding-white;
         white-space: nowrap;
         font-size: 12px;
       }
@@ -246,7 +248,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: #1d1b31;
+    background: orangered;
     width: 100%;
     height: 60px;
     line-height: 60px;
